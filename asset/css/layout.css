@@ -1,0 +1,231 @@
+@import './reset.css';
+@import './common.css';
+
+/*
+    헤더+푸터+큰틀
+*/
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+
+    padding: 0 50px;
+    z-index: 10;
+    width: 100%;
+    color: #fff;
+    transition: .5s;
+}
+#header.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+#header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 500;
+    text-wrap: nowrap;
+
+    width: 6.736vw;
+    height: 5.2vw;
+}
+#header .gnb{
+    display: flex;
+    align-items: center;
+}
+#header .col_right .gnb_list{
+    display: flex;
+    gap: 8px;
+}
+#header .col_right .gnb_item:nth-child(4){
+    margin-right: 50px;
+}
+#header .col_right .gnb_item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 5em;
+    transition: .3s;
+    position: relative;
+}
+#header .col_right .gnb_item a:hover{
+    transform: scale(.9);
+}
+#header .col_right .gnb_list{
+    transform: scaleX(0);
+    transition: .5s;
+    transform-origin: right;
+}
+#header .menu_area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 5;
+}
+#header .gnb:hover .gnb_list{
+    transform: scaleX(1);
+}
+#header .gnb:hover .menu_box{
+    transform: scale(0);
+}
+#header .menu_box{
+    display: flex;
+    width: fit-content;
+    position: relative;
+    padding-right: 1.2vw;
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+#header .ic_menu{
+    position: absolute;
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+}
+#header .ic_menu img{
+    width: 1vw;
+    background-color: rgba(244, 67, 54, 0);
+    min-width: 1vw;
+}
+#header .menu_btn{
+    display: flex;
+    position: static;
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1vh;
+    padding-right: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    width: 3vw;
+    height: 3vw;
+    background-color: #0038ff;
+    border-radius: 0.5vw;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+#header .menu_btn img{
+    width: 2vw;
+    height: 2vw;
+    order: 0;
+}
+#footer{
+    padding: 80px 0;
+    background-color: #000;
+}
+#footer .inner{
+    width: 80%;
+    margin: 0 auto;
+}
+#footer .footer_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 200px 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #1f1f1f;
+}
+#footer .footer_title_box{
+    text-align: center;
+    color: #fff;
+}
+#footer .footer_title_box h2{
+    font-size: 128px;
+    letter-spacing: -0.025em;
+    line-height: 1em;
+    font-weight: 300;
+}
+#footer .footer_link_box{
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+}
+#footer .footer_link_box .link_footer{
+    position: relative;
+    padding: 25px 55px;
+    background:#0038ff;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 50px;
+}
+#footer .footer_link_box .link_footer:hover::before{
+    width: 600px;
+    height: 600px;
+}
+#footer .footer_link_box .link_footer::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #000;
+    transition: width 0.5s, height 0.5s;
+}
+#footer .footer_link_box .link_footer span{
+    z-index: 1;
+    position: relative;
+}
+#footer .footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .sns_area{
+    display: flex;
+    gap: 50px;
+}
+#footer .link_sns_title{
+    display: block;
+    color: #fff;
+}
+#footer .link_sns_desc{
+    display: block;
+    color: #71717a;
+}
+#footer .link_sns{
+    position: relative;
+}
+#footer .link_sns:hover::before{
+    transform: scaleX(100%);
+}
+#footer .link_sns::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    content: "";
+    height: 1px;
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .8s cubic-bezier(.24,.43,.15,.97);
+    width: 100%;
+}
+#footer .copy_area{
+    text-align: right;
+}
+#footer .copy_desc{
+    color: #fff;
+}
+#footer .copy{
+    color: #71717a;
+}

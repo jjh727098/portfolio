@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinWook's Portfolio</title>
+    <link rel="icon" href="./asset/images/Favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/layout.css">
+</head>
+<body>
+    <div class="loading_container">
+        <span class="loading_text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="818" height="93" viewBox="0 0 818 93" fill="none">
+                <path d="M5.05682 78V19.8182H28.0114C32.4242 19.8182 36.1837 20.661 39.2898 22.3466C42.3958 24.0133 44.7633 26.3333 46.392 29.3068C48.0398 32.2614 48.8636 35.6705 48.8636 39.5341C48.8636 43.3977 48.0303 46.8068 46.3636 49.7614C44.697 52.7159 42.2822 55.017 39.1193 56.6648C35.9754 58.3125 32.1686 59.1364 27.6989 59.1364H13.0682V49.2784H25.7102C28.0777 49.2784 30.0284 48.8712 31.5625 48.0568C33.1155 47.2235 34.2708 46.0777 35.0284 44.6193C35.8049 43.142 36.1932 41.447 36.1932 39.5341C36.1932 37.6023 35.8049 35.9167 35.0284 34.4773C34.2708 33.0189 33.1155 31.892 31.5625 31.0966C30.0095 30.2822 28.0398 29.875 25.6534 29.875H17.358V78H5.05682Z" fill="black"/>
+                <path d="M89.1763 59.4205V34.3636H101.279V78H89.6592V70.0739H89.2047C88.2198 72.6307 86.5816 74.6856 84.2899 76.2386C82.0172 77.7917 79.2426 78.5682 75.966 78.5682C73.0494 78.5682 70.4831 77.9053 68.2672 76.5795C66.0513 75.2538 64.3183 73.3693 63.0683 70.9261C61.8373 68.483 61.2123 65.5568 61.1933 62.1477V34.3636H73.2956V59.9886C73.3145 62.5644 74.0058 64.6004 75.3695 66.0966C76.7331 67.5928 78.5607 68.3409 80.8524 68.3409C82.3107 68.3409 83.6744 68.0095 84.9433 67.3466C86.2123 66.6648 87.235 65.661 88.0115 64.3352C88.807 63.0095 89.1952 61.3712 89.1763 59.4205Z" fill="black"/>
+                <path d="M117.784 78V19.8182H129.886V41.6932H130.255C130.786 40.5189 131.553 39.3258 132.557 38.1136C133.579 36.8826 134.905 35.8598 136.534 35.0455C138.182 34.2121 140.227 33.7955 142.67 33.7955C145.852 33.7955 148.788 34.6288 151.477 36.2955C154.166 37.9432 156.316 40.4337 157.926 43.767C159.536 47.0814 160.341 51.2386 160.341 56.2386C160.341 61.1061 159.555 65.2159 157.983 68.5682C156.43 71.9015 154.308 74.4299 151.619 76.1534C148.949 77.858 145.956 78.7102 142.642 78.7102C140.293 78.7102 138.295 78.322 136.648 77.5455C135.019 76.7689 133.683 75.7936 132.642 74.6193C131.6 73.4261 130.805 72.2235 130.255 71.0114H129.716V78H117.784ZM129.63 56.1818C129.63 58.7765 129.99 61.0398 130.71 62.9716C131.43 64.9034 132.471 66.4091 133.835 67.4886C135.199 68.5492 136.856 69.0795 138.807 69.0795C140.776 69.0795 142.443 68.5398 143.807 67.4602C145.17 66.3617 146.202 64.8466 146.903 62.9148C147.623 60.964 147.983 58.7197 147.983 56.1818C147.983 53.6629 147.632 51.447 146.932 49.5341C146.231 47.6212 145.199 46.125 143.835 45.0455C142.471 43.9659 140.795 43.4261 138.807 43.4261C136.837 43.4261 135.17 43.947 133.807 44.9886C132.462 46.0303 131.43 47.5076 130.71 49.4205C129.99 51.3333 129.63 53.5871 129.63 56.1818Z" fill="black"/>
+                <path d="M186.023 19.8182V78H173.92V19.8182H186.023Z" fill="black"/>
+                <path d="M209.148 78V34.3636H221.25V78H209.148ZM215.227 28.7386C213.428 28.7386 211.885 28.142 210.597 26.9489C209.328 25.7367 208.693 24.2879 208.693 22.6023C208.693 20.9356 209.328 19.5057 210.597 18.3125C211.885 17.1004 213.428 16.4943 215.227 16.4943C217.027 16.4943 218.561 17.1004 219.83 18.3125C221.118 19.5057 221.762 20.9356 221.762 22.6023C221.762 24.2879 221.118 25.7367 219.83 26.9489C218.561 28.142 217.027 28.7386 215.227 28.7386Z" fill="black"/>
+                <path d="M280.682 46.8068L269.602 47.4886C269.413 46.5417 269.006 45.6894 268.381 44.9318C267.756 44.1553 266.932 43.5398 265.909 43.0852C264.905 42.6117 263.703 42.375 262.301 42.375C260.426 42.375 258.845 42.7727 257.557 43.5682C256.269 44.3447 255.625 45.3864 255.625 46.6932C255.625 47.7348 256.042 48.6155 256.875 49.3352C257.708 50.0549 259.138 50.6326 261.165 51.0682L269.062 52.6591C273.305 53.5303 276.468 54.9318 278.551 56.8636C280.634 58.7955 281.676 61.3333 281.676 64.4773C281.676 67.3371 280.833 69.8466 279.148 72.0057C277.481 74.1648 275.189 75.8504 272.273 77.0625C269.375 78.2557 266.032 78.8523 262.244 78.8523C256.468 78.8523 251.865 77.6496 248.437 75.2443C245.028 72.8201 243.03 69.5246 242.443 65.358L254.347 64.733C254.706 66.4943 255.578 67.839 256.96 68.767C258.343 69.6761 260.114 70.1307 262.273 70.1307C264.394 70.1307 266.098 69.7235 267.386 68.9091C268.693 68.0758 269.356 67.0057 269.375 65.6989C269.356 64.6004 268.892 63.7008 267.983 63C267.074 62.2803 265.672 61.7311 263.778 61.3523L256.222 59.8466C251.96 58.9943 248.788 57.517 246.705 55.4148C244.64 53.3125 243.608 50.6326 243.608 47.375C243.608 44.572 244.365 42.1572 245.881 40.1307C247.415 38.1042 249.564 36.5417 252.33 35.4432C255.114 34.3447 258.371 33.7955 262.102 33.7955C267.614 33.7955 271.951 34.9602 275.114 37.2898C278.295 39.6193 280.151 42.7917 280.682 46.8068Z" fill="black"/>
+                <path d="M312.841 52.7727V78H300.739V19.8182H312.5V42.0625H313.011C313.996 39.4867 315.587 37.4697 317.784 36.0114C319.981 34.5341 322.737 33.7955 326.051 33.7955C329.082 33.7955 331.724 34.4583 333.977 35.7841C336.25 37.0909 338.011 38.9754 339.261 41.4375C340.53 43.8807 341.155 46.8068 341.136 50.2159V78H329.034V52.375C329.053 49.6856 328.371 47.5928 326.989 46.0966C325.625 44.6004 323.712 43.8523 321.25 43.8523C319.602 43.8523 318.144 44.2027 316.875 44.9034C315.625 45.6042 314.64 46.6269 313.921 47.9716C313.22 49.2973 312.86 50.8977 312.841 52.7727Z" fill="black"/>
+                <path d="M377.074 78.8239C372.51 78.8239 368.57 77.9242 365.256 76.125C361.96 74.3068 359.423 71.7216 357.642 68.3693C355.881 64.9981 355 60.9924 355 56.3523C355 51.8447 355.89 47.9053 357.671 44.5341C359.451 41.1439 361.96 38.5114 365.199 36.6364C368.438 34.7424 372.254 33.7955 376.648 33.7955C379.754 33.7955 382.595 34.2784 385.171 35.2443C387.746 36.2102 389.972 37.6402 391.847 39.5341C393.722 41.428 395.18 43.767 396.222 46.5511C397.263 49.3163 397.784 52.4886 397.784 56.0682V59.5341H359.858V51.4659H384.858C384.839 49.9886 384.489 48.6723 383.807 47.517C383.125 46.3617 382.188 45.4621 380.995 44.8182C379.82 44.1553 378.466 43.8239 376.932 43.8239C375.379 43.8239 373.987 44.1742 372.756 44.875C371.525 45.5568 370.549 46.4943 369.83 47.6875C369.11 48.8617 368.731 50.197 368.693 51.6932V59.9034C368.693 61.6837 369.044 63.2462 369.745 64.5909C370.445 65.9167 371.44 66.9489 372.727 67.6875C374.015 68.4261 375.549 68.7955 377.33 68.7955C378.561 68.7955 379.678 68.625 380.682 68.2841C381.686 67.9432 382.548 67.4413 383.267 66.7784C383.987 66.1155 384.527 65.3011 384.887 64.3352L397.642 64.7045C397.112 67.5644 395.947 70.0549 394.148 72.1761C392.368 74.2784 390.029 75.9167 387.131 77.0909C384.233 78.2462 380.881 78.8239 377.074 78.8239Z" fill="black"/>
+                <path d="M413.466 78V34.3636H425.199V41.9773H425.653C426.449 39.2689 427.784 37.2235 429.659 35.8409C431.534 34.4394 433.693 33.7386 436.136 33.7386C436.742 33.7386 437.396 33.7765 438.096 33.8523C438.797 33.928 439.413 34.0322 439.943 34.1648V44.9034C439.375 44.733 438.589 44.5814 437.585 44.4489C436.581 44.3163 435.663 44.25 434.829 44.25C433.049 44.25 431.458 44.6383 430.057 45.4148C428.674 46.1723 427.576 47.233 426.761 48.5966C425.966 49.9602 425.568 51.5322 425.568 53.3125V78H413.466Z" fill="black"/>
+                <path d="M464.057 78V19.8182H487.011C491.424 19.8182 495.184 20.661 498.29 22.3466C501.396 24.0133 503.763 26.3333 505.392 29.3068C507.04 32.2614 507.864 35.6705 507.864 39.5341C507.864 43.3977 507.03 46.8068 505.364 49.7614C503.697 52.7159 501.282 55.017 498.119 56.6648C494.975 58.3125 491.169 59.1364 486.699 59.1364H472.068V49.2784H484.71C487.078 49.2784 489.028 48.8712 490.562 48.0568C492.116 47.2235 493.271 46.0777 494.028 44.6193C494.805 43.142 495.193 41.447 495.193 39.5341C495.193 37.6023 494.805 35.9167 494.028 34.4773C493.271 33.0189 492.116 31.892 490.562 31.0966C489.009 30.2822 487.04 29.875 484.653 29.875H476.358V78H464.057Z" fill="black"/>
+                <path d="M534.045 78.8523C529.633 78.8523 525.816 77.9148 522.597 76.0398C519.396 74.1458 516.924 71.5133 515.182 68.142C513.439 64.7519 512.568 60.822 512.568 56.3523C512.568 51.8447 513.439 47.9053 515.182 44.5341C516.924 41.1439 519.396 38.5114 522.597 36.6364C525.816 34.7424 529.633 33.7955 534.045 33.7955C538.458 33.7955 542.265 34.7424 545.466 36.6364C548.686 38.5114 551.167 41.1439 552.909 44.5341C554.652 47.9053 555.523 51.8447 555.523 56.3523C555.523 60.822 554.652 64.7519 552.909 68.142C551.167 71.5133 548.686 74.1458 545.466 76.0398C542.265 77.9148 538.458 78.8523 534.045 78.8523ZM534.102 69.4773C536.11 69.4773 537.786 68.9091 539.131 67.7727C540.475 66.6174 541.489 65.0455 542.17 63.0568C542.871 61.0682 543.222 58.8049 543.222 56.267C543.222 53.7292 542.871 51.4659 542.17 49.4773C541.489 47.4886 540.475 45.9167 539.131 44.7614C537.786 43.6061 536.11 43.0284 534.102 43.0284C532.076 43.0284 530.371 43.6061 528.989 44.7614C527.625 45.9167 526.593 47.4886 525.892 49.4773C525.21 51.4659 524.869 53.7292 524.869 56.267C524.869 58.8049 525.21 61.0682 525.892 63.0568C526.593 65.0455 527.625 66.6174 528.989 67.7727C530.371 68.9091 532.076 69.4773 534.102 69.4773Z" fill="black"/>
+                <path opacity="0.8" d="M563.83 78V34.3636H575.562V41.9773H576.017C576.813 39.2689 578.148 37.2235 580.023 35.8409C581.898 34.4394 584.057 33.7386 586.5 33.7386C587.106 33.7386 587.759 33.7765 588.46 33.8523C589.161 33.928 589.777 34.0322 590.307 34.1648V44.9034C589.739 44.733 588.953 44.5814 587.949 44.4489C586.945 44.3163 586.027 44.25 585.193 44.25C583.413 44.25 581.822 44.6383 580.42 45.4148C579.038 46.1723 577.939 47.233 577.125 48.5966C576.33 49.9602 575.932 51.5322 575.932 53.3125V78H563.83Z" fill="black"/>
+                <path d="M626.54 34.3636V43.4545H600.261V34.3636H626.54ZM606.227 23.9091H618.33V64.5909C618.33 65.7083 618.5 66.5795 618.841 67.2045C619.182 67.8106 619.655 68.2367 620.261 68.483C620.886 68.7292 621.606 68.8523 622.42 68.8523C622.989 68.8523 623.557 68.8049 624.125 68.7102C624.693 68.5966 625.129 68.5114 625.432 68.4545L627.335 77.4602C626.729 77.6496 625.877 77.8674 624.778 78.1136C623.68 78.3788 622.345 78.5398 620.773 78.5966C617.856 78.7102 615.299 78.322 613.102 77.4318C610.924 76.5417 609.229 75.1591 608.017 73.2841C606.805 71.4091 606.208 69.0417 606.227 66.1818V23.9091Z" fill="black"/>
+                <path d="M665.733 34.3636V43.4545H638.801V34.3636H665.733ZM644.966 78V31.2102C644.966 28.0473 645.581 25.4242 646.812 23.3409C648.062 21.2576 649.767 19.6951 651.926 18.6534C654.085 17.6117 656.538 17.0909 659.284 17.0909C661.14 17.0909 662.835 17.233 664.369 17.517C665.922 17.8011 667.078 18.0568 667.835 18.2841L665.676 27.375C665.203 27.2235 664.616 27.0814 663.915 26.9489C663.233 26.8163 662.532 26.75 661.812 26.75C660.032 26.75 658.792 27.1667 658.091 28C657.39 28.8144 657.04 29.9602 657.04 31.4375V78H644.966Z" fill="black"/>
+                <path d="M689.795 78.8523C685.383 78.8523 681.566 77.9148 678.347 76.0398C675.146 74.1458 672.674 71.5133 670.932 68.142C669.189 64.7519 668.318 60.822 668.318 56.3523C668.318 51.8447 669.189 47.9053 670.932 44.5341C672.674 41.1439 675.146 38.5114 678.347 36.6364C681.566 34.7424 685.383 33.7955 689.795 33.7955C694.208 33.7955 698.015 34.7424 701.216 36.6364C704.436 38.5114 706.917 41.1439 708.659 44.5341C710.402 47.9053 711.273 51.8447 711.273 56.3523C711.273 60.822 710.402 64.7519 708.659 68.142C706.917 71.5133 704.436 74.1458 701.216 76.0398C698.015 77.9148 694.208 78.8523 689.795 78.8523ZM689.852 69.4773C691.86 69.4773 693.536 68.9091 694.881 67.7727C696.225 66.6174 697.239 65.0455 697.92 63.0568C698.621 61.0682 698.972 58.8049 698.972 56.267C698.972 53.7292 698.621 51.4659 697.92 49.4773C697.239 47.4886 696.225 45.9167 694.881 44.7614C693.536 43.6061 691.86 43.0284 689.852 43.0284C687.826 43.0284 686.121 43.6061 684.739 44.7614C683.375 45.9167 682.343 47.4886 681.642 49.4773C680.96 51.4659 680.619 53.7292 680.619 56.267C680.619 58.8049 680.96 61.0682 681.642 63.0568C682.343 65.0455 683.375 66.6174 684.739 67.7727C686.121 68.9091 687.826 69.4773 689.852 69.4773Z" fill="black"/>
+                <path d="M732.682 19.8182V78H720.58V19.8182H732.682Z" fill="black"/>
+                <path d="M747.955 78V34.3636H760.057V78H747.955ZM754.034 28.7386C752.235 28.7386 750.691 28.142 749.403 26.9489C748.134 25.7367 747.5 24.2879 747.5 22.6023C747.5 20.9356 748.134 19.5057 749.403 18.3125C750.691 17.1004 752.235 16.4943 754.034 16.4943C755.833 16.4943 757.367 17.1004 758.636 18.3125C759.924 19.5057 760.568 20.9356 760.568 22.6023C760.568 24.2879 759.924 25.7367 758.636 26.9489C757.367 28.142 755.833 28.7386 754.034 28.7386Z" fill="black"/>
+                <path d="M796.045 78.8523C791.633 78.8523 787.816 77.9148 784.597 76.0398C781.396 74.1458 778.924 71.5133 777.182 68.142C775.439 64.7519 774.568 60.822 774.568 56.3523C774.568 51.8447 775.439 47.9053 777.182 44.5341C778.924 41.1439 781.396 38.5114 784.597 36.6364C787.816 34.7424 791.633 33.7955 796.045 33.7955C800.458 33.7955 804.265 34.7424 807.466 36.6364C810.686 38.5114 813.167 41.1439 814.909 44.5341C816.652 47.9053 817.523 51.8447 817.523 56.3523C817.523 60.822 816.652 64.7519 814.909 68.142C813.167 71.5133 810.686 74.1458 807.466 76.0398C804.265 77.9148 800.458 78.8523 796.045 78.8523ZM796.102 69.4773C798.11 69.4773 799.786 68.9091 801.131 67.7727C802.475 66.6174 803.489 65.0455 804.17 63.0568C804.871 61.0682 805.222 58.8049 805.222 56.267C805.222 53.7292 804.871 51.4659 804.17 49.4773C803.489 47.4886 802.475 45.9167 801.131 44.7614C799.786 43.6061 798.11 43.0284 796.102 43.0284C794.076 43.0284 792.371 43.6061 790.989 44.7614C789.625 45.9167 788.593 47.4886 787.892 49.4773C787.21 51.4659 786.869 53.7292 786.869 56.267C786.869 58.8049 787.21 61.0682 787.892 63.0568C788.593 65.0455 789.625 66.6174 790.989 67.7727C792.371 68.9091 794.076 69.4773 796.102 69.4773Z" fill="black"/>
+            </svg>
+        </span>
+    </div>
+    <div class="group_cursor">
+        <button class="cursor_more_btn">
+            <p>More</p>
+            <i class="morebtn_ic">
+                <svg data-v-c13fd2a1="" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-c13fd2a1="" fill-rule="evenodd" clip-rule="evenodd" d="M11.9965 8.5308C11.9965 8.84819 11.7333 9.11139 11.4159 9.11139C11.0985 9.11139 10.8353 8.84819 10.8353 8.5308V1.98239L0.988945 11.8287C0.872827 11.9448 0.725745 11.999 0.578662 11.999C0.43158 11.999 0.284497 11.9448 0.16838 11.8287C-0.0561152 11.6042 -0.0561152 11.2326 0.16838 11.0082L10.0154 1.16118H3.46566C3.14827 1.16118 2.88507 0.897979 2.88507 0.58059C2.88507 0.263201 3.14827 0 3.46566 0H11.4159C11.5013 0 11.5827 0.0190504 11.6562 0.0530812C11.7182 0.0808598 11.7761 0.119992 11.8266 0.170477C11.884 0.227843 11.9267 0.294813 11.9547 0.366478C11.9816 0.432929 11.9965 0.505232 11.9965 0.58059V8.5308Z" fill="white"></path></svg>
+            </i>
+        </button>
+    </div>
+    <header id="header">
+        <div class="col_left">
+            <h1 class="logo">
+                <a href="#">JIN WOOK</a>
+            </h1>
+        </div>
+        <div class="col_right">
+            <nav class="gnb">
+                <ul class="gnb_list">
+                    <li class="gnb_item">
+                        <a href="#main_project">MAIN PROJECT</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#side_project">SIDE PROJECT</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#about">ABOUT ME</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#footer">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="menu_area">
+                    <div class="menu_box">
+                        <div class="ic_menu">
+                            <img src="./asset/images/menu.webp" alt>
+                        </div>
+                    </div>
+                    <a href="#" class="menu_btn" role="button">
+                        <img src="./asset/images/header_btn.webp" alt>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <div class="sc_visual">
+            <div class="visual_thumb_area">
+                <div class="visual_thumb_box">
+                    <video autoplay loop muted playsinline src="./asset/video/main_visual.mp4"></video>
+                </div>
+            </div>
+            <div class="visual_center_container">
+                <div class="visual_center">
+                    <div class="visual_center_area">
+                        <span class="visual_subtitle text_effect">publisher</span>
+                        <h2 class="visual_title text_effect">Portfolio</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="group_about">
+            <div class="about_title_box">
+                <h3 class="about_title text_effect">About Me</h3>
+            </div>
+            <div class="about_info_box">
+                <div class="about_desc_box">
+                    <strong class="text_effect">Publisher, Trends, Technologies</strong>
+                    <p class="about_desc text_effect">저는 웹 퍼블리셔로서 웹 표준과 웹 접근성을 준수하며, 단순히 구현에 그치지 않고 성능과 사용성을 개선하는 데 관심을 가지고 있습니다.<br>새로운 기술과 트렌드를 적극적으로 탐구하며, 이를 프로젝트에 접목해 더 나은 결과물을 만들어내기 위해<br>끊임없이 노력하고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        <section id="main_project" class="sc_project v1">
+            <h2 class="blind">프로젝트01</h2>
+            <div class="sticky">
+                <div class="project_container">
+                    <div class="group_project">
+                        <div class="bar_area">
+                            <div class="bar_box"></div>
+                        </div>
+                        <div class="project_headline_area">
+                            <div class="project_headline_box">
+                                <h3 class="project_headline">Main Project</h3>
+                            </div>
+                            <div class="project_label_box">
+                                <div class="project_label_item">
+                                    <span class="project_label">#기여도 : 100%</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#GSAP</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#SCROLLTRIGGER</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#JAVASCRIPT</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#DRAGGABLE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_thumb_area">
+                            <div class="project_thumb_box">
+                                <div class="project_thumb_video">
+                                    <video autoplay muted loop playsinline src="./asset/video/reassurance_video.mp4"></video>
+                                </div>
+                                <div class="project_info_box">
+                                    <div class="project_thumb_title_box">
+                                        <a href="#" class="link_project_thumb_title">
+                                            <span class="project_thumb_subtitle">Clones</span>
+                                            <h3 class="project_thumb_title">The Timepiece</h3>
+                                        </a>
+                                    </div>
+                                    <div class="link_thumb_project_box">
+                                        <a href="https://jjh727098.github.io/Timepiece" target="_blank"  class="link_thumb_project">GO SITE</a>
+                                    </div>
+                                    <div class="link_thumb_project_box cursur">
+                                        <a href="https://velog.io/@jjh727098/Timepiece-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C-%EC%82%AC%EC%9D%B4%ED%8A%B8" target="_blank"  class="link_thumb_project">CODE RIVIEW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_project">
+                        <div class="bar_area">
+                            <div class="bar_box"></div>
+                        </div>
+                        <div class="project_headline_area">
+                            <div class="project_headline_box">
+                                <h3 class="project_headline">Main Project</h3>
+                            </div>
+                            <div class="project_label_box">
+                                <div class="project_label_item">
+                                    <span class="project_label">#기여도 : 100%</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#JAVASCRIPT</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#GSAP</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#SWIPER</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#SCROLLTRIGGER</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_thumb_area">
+                            <div class="project_thumb_box">
+                                <div class="project_thumb_video">
+                                    <video autoplay muted loop playsinline src="./asset/video/Apple Vision Pro.mp4"></video>
+                                </div>
+                                <div class="project_info_box">
+                                    <div class="project_thumb_title_box">
+                                        <span class="project_thumb_subtitle">Clones</span>
+                                        <h3 class="project_thumb_title">Apple Vision Pro</h3>
+                                    </div>
+                                    <div class="link_thumb_project_box">
+                                        <a href="https://jjh727098.github.io/apple" target="_blank"  class="link_thumb_project">GO SITE</a>
+                                    </div>
+                                    <div class="link_thumb_project_box cursur">
+                                        <a href="https://velog.io/@jjh727098/Apple-Vision-Pro-%EC%A0%81%EC%9D%91%ED%98%95-%EC%82%AC%EC%9D%B4%ED%8A%B8" target="_blank"  class="link_thumb_project">CODE RIVIEW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_project">
+                        <div class="bar_area">
+                            <div class="bar_box"></div>
+                        </div>
+                        <div class="project_headline_area">
+                            <div class="project_headline_box">
+                                <h3 class="project_headline">Main Project</h3>
+                            </div>
+                            <div class="project_label_box">
+                                <div class="project_label_item">
+                                    <span class="project_label">#기여도 : 100%</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#JAVASCRIPT</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#GSAP</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#SCROLLTRIGGER</span>
+                                </div>
+                                <div class="project_label_item">
+                                    <span class="project_label">#LENIS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_thumb_area">
+                            <div class="project_thumb_box">
+                                <div class="project_thumb_video">
+                                    <video autoplay muted loop playsinline src="./asset/video/hotel.mp4"></video>
+                                </div>
+                                <div class="project_info_box">
+                                    <div class="project_thumb_title_box">
+                                        <span class="project_thumb_subtitle">Renewal</span>
+                                        <h3 class="project_thumb_title">The Shilla Hotel</h3>
+                                    </div>
+                                    <div class="link_thumb_project_box">
+                                        <a href="https://jjh727098.github.io/The_shilla_hotels" target="_blank"  class="link_thumb_project">GO SITE</a>
+                                    </div>
+                                    <div class="link_thumb_project_box cursur">
+                                        <a href="https://velog.io/@jjh727098/%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94-%EB%A6%AC%EB%89%B4%EC%96%BC-%EC%82%AC%EC%9D%B4%ED%8A%B8" target="_blank" class="link_thumb_project">CODE RIVIEW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="group_about v2">
+            <div class="headline_box">
+                <span class="headline_title text_effect">Side Project</span>
+                <p class="headline_desc text_effect">클론 코딩을 통한 시멘틱 마크업의 중요성과 Class Naming 작성법,<br>접근성을 위한 IR기법과 효율적인 이미지 로딩을 위한 IS 기법을 중점으로 두며<br>Swiper 라이브러리와 제이쿼리를 통한 다양한 스크립트를 구현하였습니다.</p>
+            </div>
+        </div>
+        <section id="side_project" class="sc_project v2">
+            <h2 class="blind">프로젝트02</h2>
+            <div class="inner">
+                <div class="project_container">
+                    <div class="group_project grid">
+                        <div href="#" class="project_area col_start_1 row_end_4 row_start_1 col_end_6">
+                            <a href="https://jjh727098.github.io/enterprise" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/enter_prise.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EC%97%94%ED%84%B0%ED%94%84%EB%9D%BC%EC%9D%B4%EC%A6%88-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">Enterprise Blockchain</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                        <div href="#" class="project_area col_start_7 col_end_13 row_start_3 row_end_5">
+                            <a href="https://jjh727098.github.io/career" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/career.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%BB%A4%EB%A6%AC%EC%96%B4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">Naver Career</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                        <div href="#" class="project_area col_start_2 col_end_6 row_start_6 row_end_8">
+                            <a href="https://jjh727098.github.io/elegant" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/elegant.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EC%9A%B0%EC%95%84%ED%95%9C-%ED%98%95%EC%A0%9C%EB%93%A4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">Elegant Brothers</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                        <div href="#" class="project_area col_start_7 col_end_12 row_end_10 row_start_7">
+                            <a href="https://jjw72704893.cafe24.com" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/andar.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EC%95%88%EB%8B%A4%EB%A5%B4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">ANDAR</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group_project grid">
+                        <div href="#" class="project_area col_start_1 row_end_4 row_start_1 col_end_6">
+                            <a href="https://jjh727098.github.io/-town_hall/" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/city_hole.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EC%88%9C%EC%B2%9C%EC%8B%9C%EC%B2%AD-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">Suncheon City Hall</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                        <div href="#" class="project_area col_start_7 col_end_13 row_start_3 row_end_5">
+                            <a href="https://jjh727098.github.io/naver/" target="_blank" class="project_thumb_box">
+                                <img src="./asset/images/naver.png" alt>
+                            </a>
+                            <a href="https://velog.io/@jjh727098/%EB%84%A4%EC%9D%B4%EB%B2%84-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="project_desc_box">
+                                <h3 class="project_desc">NAVER</h3>
+                                <span>CODE REVIEW</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="more_btn">
+                    <span>Load More</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer_top">
+                <div class="footer_title_box">
+                    <h2 class="text_effect">Let’s work<br>together</h2>
+                </div>
+                <div class="footer_link_box">
+                    <a href="mailto:jjh727098@naver.com" class="link_footer">
+                        <span class="text_effect">jjh727098@naver.com</span>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <span class="text_effect">010-4893-9860</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="sns_area">
+                    <a href="https://velog.io/@jjh727098/posts" target="_blank" class="link_sns">
+                        <span class="link_sns_title text_effect">Velog</span>
+                    </a>
+                    <a href="https://ribbon-impatiens-6a7.notion.site/Jin-Wook-Jung-Publisher-9a86ac6e5a5f4637a794a3086cb7d8f7?pvs=74" target="_blank" class="link_sns">
+                        <span class="link_sns_title text_effect">Notion</span>
+                    </a>
+                </div>
+                <div class="copy_area">
+                    <p class="copy_desc text_effect">Designed and developed by JinWook</p>
+                    <small class="copy text_effect">© 2024 All rights reserved</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>

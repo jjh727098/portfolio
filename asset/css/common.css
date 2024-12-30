@@ -1,0 +1,68 @@
+/*
+
+공통
+
+*/
+.blind{
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.row_start_1{grid-row-start: 1;}
+.row_start_2{grid-row-start: 2;}
+.row_start_3{grid-row-start: 3;}
+.row_start_4{grid-row-start: 4;}
+.row_start_5{grid-row-start: 5;}
+.row_start_6{grid-row-start: 6;}
+.row_start_7{grid-row-start: 7;}
+.row_start_8{grid-row-start: 8;}
+.row_start_9{grid-row-start: 9;}
+.row_start_10{grid-row-start: 10;}
+.row_start_11{grid-row-start: 11;}
+.row_start_12{grid-row-start: 12;}
+.row_start_13{grid-row-start: 13;}
+
+.row_end_1{grid-row-end: 1;}
+.row_end_2{grid-row-end: 2;}
+.row_end_3{grid-row-end: 3;}
+.row_end_4{grid-row-end: 4;}
+.row_end_5{grid-row-end: 5;}
+.row_end_6{grid-row-end: 6;}
+.row_end_7{grid-row-end: 7;}
+.row_end_8{grid-row-end: 8;}
+.row_end_9{grid-row-end: 9;}
+.row_end_10{grid-row-end: 10;}
+.row_end_11{grid-row-end: 11;}
+.row_end_12{grid-row-end: 12;}
+.row_end_13{grid-row-end: 13;}
+
+.col_start_1{grid-column-start: 1;}
+.col_start_2{grid-column-start: 2;}
+.col_start_3{grid-column-start: 3;}
+.col_start_4{grid-column-start: 4;}
+.col_start_5{grid-column-start: 5;}
+.col_start_6{grid-column-start: 6;}
+.col_start_7{grid-column-start: 7;}
+.col_start_8{grid-column-start: 8;}
+.col_start_9{grid-column-start: 9;}
+.col_start_10{grid-column-start: 10;}
+.col_start_11{grid-column-start: 11;}
+.col_start_12{grid-column-start: 12;}
+.col_start_13{grid-column-start: 13;}
+
+.col_end_1{grid-column-end: 1;}
+.col_end_2{grid-column-end: 2;}
+.col_end_3{grid-column-end: 3;}
+.col_end_4{grid-column-end: 4;}
+.col_end_5{grid-column-end: 5;}
+.col_end_6{grid-column-end: 6;}
+.col_end_7{grid-column-end: 7;}
+.col_end_8{grid-column-end: 8;}
+.col_end_9{grid-column-end: 9;}
+.col_end_10{grid-column-end: 10;}
+.col_end_11{grid-column-end: 11;}
+.col_end_12{grid-column-end: 12;}
+.col_end_13{grid-column-end: 13;}
