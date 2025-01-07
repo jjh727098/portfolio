@@ -21,12 +21,12 @@ fieldset, input{
     border: 0;
 }
 ul{list-style: none;}
-body{background: #000;}
-
+body{
+	font-family: 'GENERAL', 'PRETENDARD', 'dotum', 'sans serif';
+	background: #000;
+}
 
 html{
-	text-rendering: optimizeLegibility;
-    scroll-behavior: auto;
     scrollbar-width: none!important;
 }
 
@@ -52,4 +52,62 @@ input::-webkit-inner-spin-button {
 	font-family:'MAZUUS';
 	font-weight:300;
 	src: url(../fonts/MAZIUSREVIEW20.09-Italic.woff);
+}
+
+@font-face{
+	font-family:'GENERAL';
+	font-weight:700;
+	src: url(../fonts/GeneralSans-Bold.woff2);
+}
+@font-face{
+	font-family:'GENERAL';
+	font-weight:600;
+	src: url(../fonts/GeneralSans-Semibold.woff2);
+}
+@font-face{
+	font-family:'GENERAL';
+	font-weight:500;
+	src: url(../fonts/GeneralSans-Regular.woff2);
+}
+@font-face{
+	font-family:'GENERAL';
+	font-weight:400;
+	src: url(../fonts/GeneralSans-Medium.woff2);
+}
+@font-face{
+	font-family:'GENERAL';
+	font-weight:300;
+	src: url(../fonts/GeneralSans-Light.woff2);
+}
+
+
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:800;
+	src: url(../fonts/Pretendard-Bold.woff2);
+}
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:700;
+	src: url(../fonts/Pretendard-SemiBold.woff2);
+}
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:600;
+	src: url(../fonts/Pretendard-Medium.woff2);
+}
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:500;
+	src: url(../fonts/Pretendard-Regular.woff2);
+}
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:300;
+	src: url(../fonts/Pretendard-Light.woff2);
+}
+@font-face{
+	font-family:'PRETENDARD';
+	font-weight:200;
+	src: url(../fonts/Pretendard-Thin.woff2);
 }

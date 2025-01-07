@@ -43,9 +43,6 @@
     display: flex;
     gap: 8px;
 }
-#header .col_right .gnb_item:nth-child(4){
-    margin-right: 50px;
-}
 #header .col_right .gnb_item a{
     display: flex;
     justify-content: center;
@@ -59,66 +56,6 @@
 }
 #header .col_right .gnb_item a:hover{
     transform: scale(.9);
-}
-#header .col_right .gnb_list{
-    transform: scaleX(0);
-    transition: .5s;
-    transform-origin: right;
-}
-#header .menu_area{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 5;
-}
-#header .gnb:hover .gnb_list{
-    transform: scaleX(1);
-}
-#header .gnb:hover .menu_box{
-    transform: scale(0);
-}
-#header .menu_box{
-    display: flex;
-    width: fit-content;
-    position: relative;
-    padding-right: 1.2vw;
-    align-self: center !important;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-}
-#header .ic_menu{
-    position: absolute;
-    align-self: center !important;
-    justify-content: center;
-    align-items: center;
-}
-#header .ic_menu img{
-    width: 1vw;
-    background-color: rgba(244, 67, 54, 0);
-    min-width: 1vw;
-}
-#header .menu_btn{
-    display: flex;
-    position: static;
-    align-self: center !important;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1vh;
-    padding-right: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 1vh;
-    width: 3vw;
-    height: 3vw;
-    background-color: #0038ff;
-    border-radius: 0.5vw;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-#header .menu_btn img{
-    width: 2vw;
-    height: 2vw;
-    order: 0;
 }
 #footer{
     padding: 80px 0;
@@ -163,22 +100,10 @@
     overflow: hidden;
     font-family: 'Plus Jakarta Sans', sans-serif;
     border-radius: 50px;
+    transition: .3s;
 }
-#footer .footer_link_box .link_footer:hover::before{
-    width: 600px;
-    height: 600px;
-}
-#footer .footer_link_box .link_footer::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    background: #000;
-    transition: width 0.5s, height 0.5s;
+#footer .footer_link_box .link_footer:hover{
+    transform: translateY(-10%);
 }
 #footer .footer_link_box .link_footer span{
     z-index: 1;

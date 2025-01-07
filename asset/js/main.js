@@ -30,12 +30,12 @@ paths.forEach((path, index) => {
 });
 
 // 전체 글자 유지
-timeline.to(paths, { opacity: 1, duration: 3 }, "+=0");
+timeline.to(paths, { opacity: 1, duration: 1 }, "+=0");
 
 // 배경 전체가 위로 올라가며 사라지는 애니메이션
 timeline.to(".loading_container", {
   y: "-100%",
-  duration: 1,
+  duration: .3,
   ease: "power2.inOut",
   onComplete: () => {
     document.querySelector(".loading_container").style.display = "none";
@@ -85,11 +85,12 @@ $(".project_info_box .link_thumb_project_box.cursur").on("mouseleave", function 
 });
 
 // 프로젝트 v1 영역
-gsap.set('.group_project',{'border-radius':'2.7vw',yPercent:100,duration:2,delay:.5})
-gsap.set('.bar_area',{'width':'0vw',duration:2,delay:.5})
-gsap.set('.project_headline',{'font-size':'200px',xPercent:120,duration:2,delay:.5})
-gsap.set('.project_thumb_box',{scale:0.8,yPercent:30,duration:2,delay:.5})
-gsap.set('.project_label_item',{scale:0,xPercent:160,duration:2,delay:.5})
+gsap.set('.sc_project.v1 .group_project',{'border-radius':'2.7vw',yPercent:100,duration:2,delay:.5})
+gsap.set('.sc_project.v1 .bar_area',{'width':'0vw',duration:2,delay:.5})
+gsap.set('.sc_project.v1 .project_headline',{'font-size':'160px','left':'50%',duration:2,delay:.5})
+gsap.set('.sc_project.v1 .project_thumb_box',{scale:0.8,yPercent:30,duration:2,delay:.5})
+gsap.set('.sc_project.v1 .project_label_item',{scale:0,duration:2,delay:.5})
+gsap.set('.sc_project.v1 .project_desc_area',{scale:0,duration:2,delay:.5})
 
 const projectTl = gsap.timeline({
   scrollTrigger:{
@@ -104,25 +105,14 @@ const projectTl = gsap.timeline({
     scrub:0,
   }
 })
-projectTl.to('.group_project:nth-child(1)',{'border-radius':'0vw',yPercent:0,duration:2,delay:.5},'a')
-projectTl.to('.group_project:nth-child(1) .bar_area',{'width':'100vw',duration:2,delay:.5},'a')
-projectTl.to('.group_project:nth-child(1) .project_headline',{'font-size':'30px',xPercent:0,duration:2,delay:.5},'a')
-projectTl.to('.group_project:nth-child(1) .project_thumb_box',{scale:1,yPercent:0,duration:2,delay:.5},'a')
-projectTl.to('.group_project:nth-child(1) .project_label_item',{scale:1,xPercent:0,duration:2,delay:.5},'a')
-
-
-projectTl.to('.group_project:nth-child(2)',{'border-radius':'0vw',yPercent:7,duration:2,delay:.5},'b')
-projectTl.to('.group_project:nth-child(2) .bar_area',{'width':'100vw',duration:2,delay:.5},'b')
-projectTl.to('.group_project:nth-child(2) .project_headline',{'font-size':'30px',xPercent:0,duration:2,delay:.5},'b')
-projectTl.to('.group_project:nth-child(2) .project_thumb_box',{scale:1,yPercent:0,duration:2,delay:.5},'b')
-projectTl.to('.group_project:nth-child(2) .project_label_item',{scale:1,xPercent:0,duration:2,delay:.5},'b')
-
-projectTl.to('.group_project:nth-child(3)',{'border-radius':'0vw',yPercent:14,duration:2,delay:.5},'c')
-projectTl.to('.group_project:nth-child(3) .bar_area',{'width':'100vw',duration:2,delay:.5},'c')
-projectTl.to('.group_project:nth-child(3) .project_headline',{'font-size':'30px',xPercent:0,duration:2,delay:.5},'c')
-projectTl.to('.group_project:nth-child(3) .project_thumb_box',{scale:1,yPercent:0,duration:2,delay:.5},'c')
-projectTl.to('.group_project:nth-child(3) .project_label_item',{scale:1,xPercent:0,duration:2,delay:.5},'c')
-
+document.querySelectorAll('.sc_project.v1 .group_project').forEach((element,i) => {
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1})`,{'border-radius':'0vw',yPercent:7*i,duration:2,delay:.5})
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .bar_area`,{'width':'100vw',duration:2,delay:.5},"<")
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_headline`,{'font-size':'30px','left':'0%',duration:2,delay:.5},"<")
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_thumb_box`,{scale:1,yPercent:0,duration:2,delay:.5},"<")
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_label_item`,{scale:1,duration:2,delay:.5},"<")
+  projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_desc_area`,{scale:1,duration:2,delay:.5},"<")
+});
 
 // 프로젝트 v2 영역
 gsap.set('.project_area',{autoAlpha:0 ,duration:2,delay:.5})
@@ -147,4 +137,28 @@ $('.sc_project.v2 .project_area').each(function (i, el) {
       autoAlpha: 0,
       duration: 1,
     });
+});
+
+// 최하단 진행바 애니메이션 
+const $progressBar = $('.fix_progress_bar');
+const $progressText = $('.fix_progress_bar .text');
+
+ScrollTrigger.create({
+    trigger: document.body, // 문서 전체를 트리거로 설정
+    start: 'top top', 
+    end: 'bottom bottom',
+    onUpdate: (self) => {
+        // 진행률 계산 (0 ~ 1 사이의 값)
+        const progress = self.progress * 100;
+
+        // 프로그레스 바 너비 업데이트
+        $progressBar.css('width', `${progress}%`);
+
+        // 텍스트 업데이트
+        if (progress < 100) {
+            $progressText.text(`${Math.round(progress)}%`);
+        } else {
+            $progressText.text('포트폴리오를 봐주셔서 감사합니다.');
+        }
+    }
 });

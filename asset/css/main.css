@@ -127,6 +127,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .visual_center_container{
@@ -162,6 +166,16 @@
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 500;
+}
+.sc_project.v1 .headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 100px;
+    font-family: 'MAZUUS';
+    opacity: .3;
 }
 .sc_project.v2{
     padding-top: 120px;
@@ -199,26 +213,14 @@
     overflow: hidden;
     border-radius: 50px;
     border: 1px solid #000;
+    transition: .3s;
+}
+.sc_project.v2 .more_btn:hover{
+    transform: translateY(-10%);
 }
 .sc_project.v2 .more_btn span{
     position: relative;
     z-index: 1;
-}
-.sc_project.v2 .more_btn:hover::before{
-    width: 300px;
-    height: 300px;
-}
-.sc_project.v2 .more_btn::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    background: #000;
-    transition: width 0.5s, height 0.5s;
 }
 .sc_project.v2 .project_desc{
     font-size: 24px;
@@ -248,8 +250,7 @@
 .group_about .about_title{
     color: #f5f5f5;
     font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 600;
     letter-spacing: 2px;
     background-color: rgba(0, 0, 0, 0);
     padding-top: 3px;
@@ -258,12 +259,13 @@
     margin-left: 1.5vw;
 }
 .group_about .about_desc_box strong{
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }
 .group_about .about_desc_box{
-    font-size: 18px;
-    line-height: 1.25;
+    font-size: 16px;
+    line-height: 1.92;
+    font-family: 'PRETENDARD';
     color: #fff;
     font-weight: 300;
 }
@@ -317,9 +319,8 @@
 }
 .group_about.v2 .headline_title{
     color: #f5f5f5;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
     letter-spacing: 2px;
     background-color: rgba(0, 0, 0, 0);
     margin-right: 1.5vw;
@@ -337,9 +338,9 @@
 .group_about.v2 .headline_desc{
     text-align: center;
     font-weight: 300;
-    font-size: 19px;
-    font-style: normal;
-    line-height: 1.25;
+    font-size: 16px;
+    line-height: 1.92;
+    font-family: 'PRETENDARD';
     color: #f5f5f5;
     margin-top: 20px;
 }
@@ -357,6 +358,7 @@
 .sc_project.v1 .project_thumb_video{
     position: absolute;
     top: 0; right: 0; left: 0; bottom: 0;
+    opacity: .6;
 }
 .sc_project.v1 .project_thumb_video video{
     width: 100%;
@@ -414,7 +416,6 @@
 }
 .sc_project.v1 .project_headline{
     position: relative;
-    width: 12vw;
     font-size: 30px;
     font-weight: 700;
     text-wrap: nowrap;
@@ -426,18 +427,24 @@
 
     z-index: 2;
 }
-.sc_project.v1 .project_label_item{
-    background-color: #080d10;
-    border-radius: 3px;
+.sc_project.v1 .project_desc_area{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 16px;
+    font-family: "PRETENDARD";
+    line-height: 1.92;
+    color: #fff;
+    z-index: 5;
+    width: 30%;
 }
 .sc_project.v1 .project_label{
     color: #f5f5f5;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 18px;
     margin: 0 2vw;
     padding-top: 0.4vh;
     padding-bottom: 0.4vh;
-    line-height: 1.7;
+    line-height: 2.7;
 }
 .sc_project.v1 .project_thumb_area{
     display: flex;
@@ -535,4 +542,24 @@
 }
 .sc_project.v1 .link_thumb_project:hover{
     background-color: #000;
+}
+.fix_progress{
+    position: fixed;
+    bottom: 0;left: 0;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    z-index: 10;
+}
+.fix_progress_bar{
+    position: absolute;
+    top: 0;left: 0;
+    width: 0%;
+    height: 100%;
+    background: #f00;
+}
+.fix_progress_bar .text{
+    position: absolute;
+    bottom: 100%; right: 0;
+    color: #fff;
 }
