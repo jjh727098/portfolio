@@ -254,6 +254,7 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding-top: 10px;
     }
     #footer .copy .line{
         text-align: center !important;
@@ -276,6 +277,9 @@
     #footer .footer_title_box h2{
         font-size: 36px;
     }
+    .sc_project.v2 .more_btn span{
+        font-size: 12px;
+    }
 }
 @media (max-width: 320px){
     #footer .footer_title_box h2{
@@ -286,8 +290,5 @@
     }
     .sc_project.v2 .more_btn{
         padding: 15px 25px;
-    }
-    .sc_project.v2 .more_btn span{
-        font-size: 12px;
     }
 }

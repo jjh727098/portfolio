@@ -832,6 +832,11 @@
         height: 400px;
         position: relative;
     }
+    .group_about.v2 .headline_desc{
+        font-size: 12px;
+        width: 70%;
+        margin: 20px auto;
+    }
 }
 @media (max-width: 480px){
     .group_about.v2{
@@ -839,6 +844,10 @@
     }
     .group_about{
         padding: 0;
+    }
+    .sc_project.v2 .project_desc{
+        font-size: 12px;
+        padding-top: 10px;
     }
 }
 @media (max-width: 320px){
@@ -875,11 +884,6 @@
     .sc_project.mo .project_thumb_title{
         font-size: 12px;
     }
-    .group_about.v2 .headline_desc{
-        font-size: 12px;
-        width: 70%;
-        margin: 20px auto;
-    }
     .visual_center .visual_subtitle{
         font-size: 30px;
     }
@@ -891,9 +895,6 @@
     }
     .sc_project.v2{
         padding-top: 20px;
-    }
-    .sc_project.v2 .project_desc{
-        font-size: 12px;
     }
     .sc_project.v2 .project_desc_box span{
         font-size: 12px;
