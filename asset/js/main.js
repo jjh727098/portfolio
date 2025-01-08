@@ -42,6 +42,9 @@ timeline.to(".loading_container", {
   }
 });
 
+// 모바일 화면 크기 조건 (1180px 이하)
+if (!window.matchMedia('(max-width: 1180px)').matches) {
+
 // 텍스트 효과
 const text = gsap.utils.toArray(".text_effect");
         
@@ -62,6 +65,8 @@ gsap.from(lines, {
     }
   });
 });
+
+}
  
 // 마우스 이벤트
 const cursor = document.querySelector(".group_cursor");
@@ -83,6 +88,8 @@ $(".project_info_box .link_thumb_project_box.cursur").on("mouseenter", function 
 $(".project_info_box .link_thumb_project_box.cursur").on("mouseleave", function () {
   cursor1.removeClass("load");
 });
+
+
 
 // 프로젝트 v1 영역
 gsap.set('.sc_project.v1 .group_project',{'border-radius':'2.7vw',yPercent:100,duration:2,delay:.5})
@@ -114,6 +121,9 @@ document.querySelectorAll('.sc_project.v1 .group_project').forEach((element,i) =
   projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_desc_area`,{scale:1,duration:2,delay:.5},"<")
 });
 
+// 모바일 화면 크기 조건 (1180px 이하)
+if (!window.matchMedia('(max-width: 1180px)').matches) {
+
 // 프로젝트 v2 영역
 gsap.set('.project_area',{autoAlpha:0 ,duration:2,delay:.5})
 
@@ -139,6 +149,8 @@ $('.sc_project.v2 .project_area').each(function (i, el) {
     });
 });
 
+}
+
 // 최하단 진행바 애니메이션 
 const $progressBar = $('.fix_progress_bar');
 const $progressText = $('.fix_progress_bar .text');
@@ -162,3 +174,10 @@ ScrollTrigger.create({
         }
     }
 });
+
+$('.menu_btn').click(function(){
+  $('.menu_area').addClass('active');
+})
+$('.menu_close_btn').click(function(){
+  $('.menu_area').removeClass('active');
+})
