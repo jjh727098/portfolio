@@ -849,6 +849,9 @@
         font-size: 12px;
         padding-top: 10px;
     }
+    .sc_project.v2 .project_desc_box span{
+        font-size: 12px;
+    }
 }
 @media (max-width: 320px){
     .group_about .about_desc{
@@ -895,9 +898,6 @@
     }
     .sc_project.v2{
         padding-top: 20px;
-    }
-    .sc_project.v2 .project_desc_box span{
-        font-size: 12px;
     }
     .sc_visual{
         position: relative;
