@@ -10,7 +10,7 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 
 // 로딩화면
-const paths = document.querySelectorAll(".loading_container svg path"); // 모든 path 요소 선택
+const paths = document.querySelectorAll(".loading_container svg path"); 
 
 const timeline = gsap.timeline({
   defaults: {
@@ -19,7 +19,6 @@ const timeline = gsap.timeline({
   }
 });
 
-// 각 글자 애니메이션
 paths.forEach((path, index) => {
   timeline.fromTo(
     path,
@@ -29,10 +28,8 @@ paths.forEach((path, index) => {
   );
 });
 
-// 전체 글자 유지
 timeline.to(paths, { opacity: 1, duration: 1 }, "+=0");
 
-// 배경 전체가 위로 올라가며 사라지는 애니메이션
 timeline.to(".loading_container", {
   y: "-100%",
   duration: .3,
@@ -73,8 +70,8 @@ const cursor = document.querySelector(".group_cursor");
 const cursor1 = $(".cursor_more_btn");
 
 // 커서 좌표값 할당
-window.addEventListener("mousemove", e => {
-  gsap.to(cursor, {left: e.clientX - 5, top: e.clientY - 5 });  
+$(window).on('mousemove', e => {
+  gsap.to(cursor, { left: e.clientX - 5, top: e.clientY - 5 });
 });
 $("#side_project .project_area").on("mouseenter", function () {
   cursor1.addClass("load");
@@ -156,17 +153,14 @@ const $progressBar = $('.fix_progress_bar');
 const $progressText = $('.fix_progress_bar .text');
 
 ScrollTrigger.create({
-    trigger: document.body, // 문서 전체를 트리거로 설정
+    trigger: document.body, 
     start: 'top top', 
     end: 'bottom bottom',
     onUpdate: (self) => {
-        // 진행률 계산 (0 ~ 1 사이의 값)
         const progress = self.progress * 100;
 
-        // 프로그레스 바 너비 업데이트
         $progressBar.css('width', `${progress}%`);
 
-        // 텍스트 업데이트
         if (progress < 100) {
             $progressText.text(`${Math.round(progress)}%`);
         } else {
