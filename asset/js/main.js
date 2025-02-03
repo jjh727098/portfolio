@@ -35,7 +35,7 @@ timeline.to(".loading_container", {
   duration: .3,
   ease: "power2.inOut",
   onComplete: () => {
-    document.querySelector(".loading_container").style.display = "none";
+    $(".loading_container").css("display", "none");
   }
 });
 
@@ -66,7 +66,7 @@ gsap.from(lines, {
 }
  
 // 마우스 이벤트
-const cursor = document.querySelector(".group_cursor");
+const cursor = $(".group_cursor");
 const cursor1 = $(".cursor_more_btn");
 
 // 커서 좌표값 할당
@@ -109,7 +109,7 @@ const projectTl = gsap.timeline({
     scrub:0,
   }
 })
-document.querySelectorAll('.sc_project.v1 .group_project').forEach((element,i) => {
+$('.sc_project.v1 .group_project').each(function(i){
   projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1})`,{'border-radius':'0vw',yPercent:7*i,duration:2,delay:.5})
   projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .bar_area`,{'width':'100vw',duration:2,delay:.5},"<")
   projectTl.to(`.sc_project.v1 .group_project:nth-child(${i+1}) .project_headline`,{'font-size':'30px','left':'0%',duration:2,delay:.5},"<")
@@ -153,7 +153,7 @@ const $progressBar = $('.fix_progress_bar');
 const $progressText = $('.fix_progress_bar .text');
 
 ScrollTrigger.create({
-    trigger: document.body, 
+    trigger: $(document.body),
     start: 'top top', 
     end: 'bottom bottom',
     onUpdate: (self) => {
