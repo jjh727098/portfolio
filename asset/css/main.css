@@ -224,13 +224,13 @@
 }
 .sc_project.v2 .project_desc{
     font-size: 24px;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.4px;
     color: #fff;
 }
 .sc_project.v2 .project_desc_box span{
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.4px;
     color: #fff;
 }
 .group_about{

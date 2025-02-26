@@ -32,7 +32,7 @@
     font-weight: 500;
     text-wrap: nowrap;
 
-    width: 6.736vw;
+    width: 6.7vw;
     height: 5.2vw;
 }
 #header .gnb{
@@ -47,10 +47,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2em;
-    padding-right: 1em;
-    padding-left: 1em;
-    border-radius: 5em;
+    height: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 80px;
     transition: .3s;
     position: relative;
 }
@@ -119,8 +119,8 @@
 }
 #footer .footer_title_box h2{
     font-size: 128px;
-    letter-spacing: -0.025em;
-    line-height: 1em;
+    letter-spacing: -0.4px;
+    line-height: 16px;
     font-weight: 300;
 }
 #footer .footer_link_box{
@@ -180,7 +180,7 @@
     pointer-events: none;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform .8s cubic-bezier(.24,.43,.15,.97);
+    transition: transform .8s;
     width: 100%;
 }
 #footer .copy_area{
