@@ -120,7 +120,7 @@
 #footer .footer_title_box h2{
     font-size: 128px;
     letter-spacing: -0.4px;
-    line-height: 16px;
+    line-height: 100px;
     font-weight: 300;
 }
 #footer .footer_link_box{
@@ -276,6 +276,7 @@
     }
     #footer .footer_title_box h2{
         font-size: 36px;
+        line-height: 80px;
     }
     .sc_project.v2 .more_btn span{
         font-size: 12px;
