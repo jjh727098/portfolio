@@ -35,19 +35,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: calc(8/var(--view_width)*var(--window_width));
-    padding: calc(11/var(--view_width)*var(--window_width)) calc(20/var(--view_width)*var(--window_width));
+    gap: 10px;
+    padding: 10px 30px;
 
     position: absolute;
     left: 50%;
-    top: calc(30/var(--view_width)*var(--window_width));
+    top: 40px;
     transform: translate(-50%,-50%) scale(.5);
 
     backdrop-filter: blur(10px);
     background: #ffffff40;
-    border-radius: calc(50/var(--view_width)*var(--window_width));
+    border-radius: 50px;
     color: #000;
-    font-size: calc(16/var(--view_width)*var(--window_width));
+    font-size: 20px;
     line-height: 1;
     transition: opacity .5s ease,transform .3s ease;
     white-space: nowrap;
@@ -69,8 +69,8 @@
 }
 
 .group_cursor .cursor_more_btn svg{
-    width: calc(12/var(--view_width)*var(--window_width));
-    height: auto;
+    width: 10px;
+    height: 10px;
 }
 .group_cursor .cursor_more_btn svg path{
     fill: #000;
